@@ -1,0 +1,15 @@
+:root{  /* == <html> */
+    --box_width: 500px;
+}
+
+
+
+.box1{
+    --box_height: 100px;
+
+    width: var(--box_width);
+    height: var(--box_height);
+
+    /* 변수 미정의 시 대체값 적용 */
+    background-color: var(--alert-color, red);
+}
