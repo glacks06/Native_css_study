@@ -9,7 +9,24 @@
 
     width: var(--box_width);
     height: var(--box_height);
+    margin: 10px;
 
     /* 변수 미정의 시 대체값 적용 */
     background-color: var(--alert-color, red);
+}
+
+.box2{
+    margin: 50px 0px;
+    .box2-1{
+        width: var(--box_width);
+        height: 100px;
+        margin: 10px;
+        background-color: var(--alert-color, blue);
+    }
+    .box2-2{
+        width: var(--box_width);
+        height: 100px;
+        margin: 10px;
+        background-color: green;
+    }
 }
