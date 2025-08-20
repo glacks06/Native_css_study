@@ -7,12 +7,44 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="box1">test box 1</div>
+    <!-- 변수 -->
+    <div class="box1">
+        <div class="box1-1">
+            test box 1
+        </div>
+    </div>
 
+    <!-- 중첩 -->
     <div class="box2">
         <div class="box2-1">test box 2-1</div>
         <div class="box2-1">test box 2-1</div>
         <div class="box2-2">test box 2-3</div>
+    </div>
+
+    <!-- pseudo-class -->
+    <div class="box3">
+        <div class="box3-1">
+            <h1>h1 text</h1>
+            <h2>h2 text</h2>
+            <h3>h3 text</h3>
+        </div>
+
+        <header>
+            <h1>헤더의 제목 (h1)</h1>
+            <p>헤더 일반 텍스트</p>
+        </header>
+
+        <main>
+            <h2>메인 섹션 부제목 (h2)</h2>
+            <p class="title">메인 섹션 타이틀 클래스 (title)</p>
+            <p>메인 섹션 일반 텍스트</p>
+        </main>
+
+        <footer>
+            <h2>풋터 부제목 (h2)</h2>
+            <p class="title">풋터 타이틀 클래스 (title)</p>
+            <p>풋터 일반 텍스트</p>
+        </footer>
     </div>
 </body>
 </html>
