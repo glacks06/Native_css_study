@@ -1,9 +1,25 @@
+@layer reset, base, theme;
+/* 위와 같은 레이어 순서 정의가 없다면 나중에 나온 layer가 더 높은 우선 순위를 가짐 */
+/* 해당 명령어를 사용하는 순간 레이어 생성됨 */
+
+@import url('basic_css/base.css') layer(base);
+@import url('basic_css/theme.css') layer(theme);
+/* theme.css의 스타일을 불러오고 theme 레이어를 만들어 그 안에 포함시킴 */
+
+/* 레이어 파일 내에서 직접 지정 */
+@layer reset{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
 :root{  /* == <html> */
     --box_width: 500px;
 }
 
 body > div{
-    background-color: beige;
     margin: 100px 0px;
 }
 
@@ -51,40 +67,6 @@ body > div{
         color: green;
     }
 }
-
-
-/* .box4{
-    .box4-1{
-        container-type: size;
-        .box4-1-1{
-            height: 100px;
-            background-color: red;
-        }
-    }
-}
-
-@container (min-width: 1000px){
-    .box4-1 .box4-1-1{
-        background-color: blue;
-    }
-} */
-
-
-/* .box4 {
-  container-type: size;
-}
-
-.box4 .box4-1 {
-  height: 100px;
-  background-color: red;
-}
-
-@container (min-width: 1000px) {
-  .box4 .box4-1 {
-    background-color: blue;
-  }
-} */
-
 
 
 .box4{
