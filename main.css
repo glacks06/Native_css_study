@@ -112,24 +112,8 @@ body > div{
     }
 }
 
-/* @media (min-width: 1000px) {
-  .box4-2 .box {
+@media (min-width: 1000px) {
+  .box4-2 .box_2 {
     background-color: yellow;
   }
-} */
-
-/* .box4 {
-  container-type: size;
-  container-name: box4-container;
 }
-
-.box4 .box4-1 .box4-1-1 {
-  height: 100px;
-  background-color: red;
-}
-
-@container box4-container (min-width: 1000px){
-    .box4 .box4-1 .box4-1-1{
-        background-color: blue;
-    }
-} */
