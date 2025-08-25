@@ -168,3 +168,26 @@ body > div{
         }
     }
 }
+
+.box6{
+    width: 500px;
+    div{
+        margin: 5px 0px;
+        width: 200px;
+        height: 200px;
+        background-color: skyblue;
+    }
+    .box6-1{
+        text-wrap: wrap;
+    }
+    .box6-2{
+        text-wrap: nowrap;
+    }
+    .box6-3{
+        text-wrap: balance;
+    }
+    /* `wrap`이 적용된 제목은 텍스트가 컨테이너 너비를 초과하면 자연스럽게 줄바꿈됩니다.
+	•	`nowrap`이 적용된 제목은 줄바꿈 없이 한 줄로 표시되며, 컨테이너를 넘칩니다.
+	•	`balance`가 적용된 제목은 각 줄의 글자 수가 균형을 이루도록 줄바꿈되어 더 보기 좋은 레이아웃을 만듭니다. */
+
+}
